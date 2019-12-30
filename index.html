@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+
+  <style>
+
+  .all
+  {
+     margin-top: 80px;
+  }  
+
+  
+.form-control::-webkit-input-placeholder {
+  color: white;
+}
+
+#addToCard{
+  z-index: 100;
+  position: fixed;
+    right: 0;
+    top: 50%;
+}
+
+  </style>
+</head>
+<body>
+  <!-- HEAD -->
+  <section>
+    <nav id="navBar" class="navbar navbar-expand-lg fixed-top bg-dark">
+            <a class="navbar-brand text-white" href="#">E-commerce</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          <!-- class colapse to make it colapsed by default till toggler is pressed navbar-collaps to make it appear -->
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+             <!-- navbar-nav to give it style of navbar make them  inline  -->
+              <ul class="navbar-nav mx-auto ">
+                <li class="nav-item ">
+                  <a class="nav-link text-white active text-warning"  href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white"  href="about.html">About</a>
+                </li>
+                
+                
+                <li class="nav-item">
+                        <a class="nav-link text-white"  href="contact.html">Contact US</a>
+                      </li>
+              </ul>
+              
+            
+
+                </div>  
+          </nav>
+
+         
+            </section>
+      <!-- END HEAD  -->
+      <a id="addToCard" class="btn btn-secondary" href="cart.html"> <div class="container ">
+        <div class="row">
+        <div class="col-4" id="counter"></div>
+        <div class="col-4" id="price"></div>
+        <div class="col-4 ">Add to Cart</div>
+      </div>
+      </div></a>
+             <div class="container-fluid all" id="allData">
+             </div>
+    <script src="js/home.js"></script>
+</body>
+</html>
