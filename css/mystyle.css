@@ -1,0 +1,30 @@
+/*
+start the style of cintact page 
+*/
+
+
+.container
+{
+    
+    background-color:#ddd;
+    border-radius: 15PX;
+    margin-top: 5%;
+    
+
+  
+}
+
+.containfrom
+{
+    margin: 50px 50px;
+}
+.form-control
+{
+    border-radius: 5px;
+    margin: 10px;
+}
+.message
+{
+    height: 240px;
+    border-radius: 5px;
+}

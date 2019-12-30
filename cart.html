@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--calling the bootstrap file-->
+    <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
+    <!--calling my own style of css file-->
+    <link rel="stylesheet" href="css/mystyle.css">
+    <title>Cart</title>
+    
+</head>
+<body>
+  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+		<div class="container">
+			<div class="row">
+
+			  <!--start navigation bar -->
+				<div class="col md-12">
+	
+						<nav class="navbar navbar2 navbar-expand-lg bg-dark text-light text-center fixed-top  ">
+								<a class="navbar-brand text-light" href="index.html">E-Commerce</a>
+								<button class="navbar-toggler text-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+								  <span class="navbar-toggler-icon"><div>-</div></span>
+								</button>
+							  
+								<div class="collapse navbar-collapse " id="navbarSupportedContent">
+								  <ul class="navbar-nav mr-auto mx-auto text-danger">
+									<li class="nav-item active">
+									  <a class="nav-link text-light" href="index.html">Home <span class="sr-only">(current)</span></a>
+									</li>
+									<li class="nav-item">
+									  <a class="nav-link text-light " href="contact.html">Contact</a>
+									</li>
+									
+									
+								  </ul>
+								  
+								</div>
+							  </nav>
+	
+				</div>
+			  </div>
+			</div><br><br><br>
+        <br><br><br>
+     
+    <div class="px-4 px-lg-0">
+      
+       
+      
+        <div class="pb-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 p-5 bg-white rounded shadow-sm mb-5">
+      
+                <!-- Shopping cart table -->
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead>
+                      <tr class="bg-dark text-light">
+                        <th scope="col" class="border-0 ">
+                          <div class="p-2 px-3 text-uppercase">Product</div>
+                        </th>
+                        <th scope="col" class="border-0 ">
+                          <div class="py-2 text-uppercase">Price</div>
+                        </th>
+                        <th scope="col" class="border-0 ">
+                          <div class="py-2 text-uppercase">Quantity</div>
+                        </th>
+                        <th scope="col" class="border-0 ">
+                          <div class="py-2 text-uppercase">Total</div>
+                        </th>
+                      </tr >
+                    </thead>
+
+                    <tbody id="myProductsCard">
+                     
+                  
+          <!--the place you will put your products-->
+
+                      
+                        
+                    </tbody>
+
+                    <thead>
+                      <tr class="bg-light text-dark">
+                        <th scope="col" class="border-0 ">
+                          <div class="p-2 px-3 ">Total</div>
+                        </th>
+                        <th scope="col" class="border-0 ">
+                          <div class="py-2 text-uppercase"></div>
+                        </th>
+                        <th scope="col" class="border-0 ">
+                          <div class="py-2 text-uppercase"></div>
+                        </th>
+                        <th scope="col" class="border-0 ">
+                          <div class="py-2 text-uppercase" id='myTotalCart'> </div>
+                        </th>
+                      </tr>
+                    </thead>
+                   
+                   
+                     
+                        
+                  </table>
+                  
+                </div>
+                <!-- End -->
+              </div>
+            </div>
+            </div></div>   </div >
+
+
+          
+            
+            
+            <script src="jquery/jQuery.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+       
+    <script src="js/card_page.js"></script>
+</body>
+</html>
