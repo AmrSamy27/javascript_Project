@@ -26,7 +26,7 @@ function viewdata(e)
 method : 'POST',
 headers: {
   'Content-Type': 'application/json'
-  // 'Content-Type': 'application/x-www-form-urlencoded',
+  
 },
 body : JSON.stringify(objectOfIformation),
 
@@ -34,8 +34,8 @@ body : JSON.stringify(objectOfIformation),
 
 
      }).then(function (resolve) {
-       //console.log(JSON.resolve);
-       console.log(resolve)
+
+       console.log(resolve.json())
       }).catch(function (reject){console.log( reject)});
 
 
