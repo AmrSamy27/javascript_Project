@@ -53,7 +53,6 @@ let renderProductsTOHTml= (products) => {
             let IMG = new Image();
             let addToCardButton = document.createElement('button');
             IMG.classList.add('image-fluid');   
-                // name.classList.add('pb-5');
                 addToCardButton.classList.add('btn','btn-secondary');
             link.setAttribute('href','product.html');
                 divCol.classList.add('d-flex','flex-column','mt-5');
