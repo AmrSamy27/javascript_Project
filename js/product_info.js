@@ -25,18 +25,16 @@ if(getProductInfoCounter(data.ProductId) == data.quantity){
 }else{
     quantity.value = +counter+1;
 }
-let oldValue = quantity.value;
 document.getElementById('price').querySelector('h1').innerHTML = '$' + data.Price;
 document.getElementById('available').innerHTML = 'Availablilty: ' + data.Status;
 quantity.addEventListener('input',function(){
     this.setAttribute('min','1');
     this.setAttribute('max',data.quantity);
-     if(Number(this.value) < Number(oldValue)){
-        quantity.value = this.value;
-        document.getElementById('quantityError').innerHTML = ' ';
-    }else if(Number(this.value) >Number(data.quantity)){
-        quantity.value = oldValue;
+     if(Number(this.value) >Number(data.quantity)){
+        quantity.value = data.quantity;
                 document.getElementById('quantityError').innerHTML = 'This Product Has Only '+data.quantity+' Available In The Stock';
+    }else if (this.value == 0){
+        quantity.value = 1;
     }
 });
 
