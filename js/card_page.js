@@ -1,6 +1,5 @@
 let myCard=JSON.parse(localStorage.getItem('ecommerce'));
 let totalCartPrice=0;
-console.log(myCard)
 myCard.forEach(product => {
     const imageInfoDiv = document.createElement('div');
     const productImg = new Image();
@@ -71,19 +70,13 @@ let oldValue = quantity.value;
 quantity.addEventListener('input',function(){
     this.setAttribute('min','1');
          this.setAttribute('max',product.quantity);
-     if((Number(this.value) < Number(product.quantity)) && Number(this.value) != 0){
-         console.log('noway');
-                
+     if((Number(this.value) < Number(product.quantity)) && Number(this.value) != 0){                
          errorSpan.innerHTML = ' ';
      }else if(Number(this.value) >Number(product.quantity)){
          quantity.value = oldValue;
-         console.log('noway');
          errorSpan.innerHTML = 'This Product Has Only '+product.quantity+' Available In The Stock';
      }else if(Number(this.value) == 0){
         quantity.value = 1;
-        console.log('noway');
-
-
      }
      total.innerHTML = Number(this.value) * Number(product.price);
      product.totalPrice = Number(total.innerHTML);
@@ -97,16 +90,6 @@ quantity.addEventListener('input',function(){
  
 });
 
-function getTotalPriceOfCart(){
-    let totalCart =JSON.parse(localStorage.getItem('ecommerce'));
-        if(totalCart){
-
-            myCard.forEach(myproduct=>{
-
-            });
-        }
-
-}
 function getNewTotalPrice(){
 let newStorage =JSON.parse(localStorage.getItem('ecommerce'));
 let totalPrice=0;
