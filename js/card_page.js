@@ -66,14 +66,13 @@ myCard.forEach(product => {
         tr.remove(); 
         document.getElementById('myTotalCart').innerHTML = Number(document.getElementById('myTotalCart').innerHTML) - Number(product.totalPrice);      
    })
-let oldValue = quantity.value;
 quantity.addEventListener('input',function(){
     this.setAttribute('min','1');
          this.setAttribute('max',product.quantity);
      if((Number(this.value) < Number(product.quantity)) && Number(this.value) != 0){                
          errorSpan.innerHTML = ' ';
      }else if(Number(this.value) >Number(product.quantity)){
-         quantity.value = oldValue;
+         quantity.value = product.quantity;
          errorSpan.innerHTML = 'This Product Has Only '+product.quantity+' Available In The Stock';
      }else if(Number(this.value) == 0){
         quantity.value = 1;
@@ -81,7 +80,6 @@ quantity.addEventListener('input',function(){
      total.innerHTML = Number(this.value) * Number(product.price);
      product.totalPrice = Number(total.innerHTML);
      product.counter = this.value;
-     console.log('ajkhfka');
      localStorage.setItem('ecommerce',JSON.stringify(myCard));
         document.getElementById('myTotalCart').innerHTML =   Number(getNewTotalPrice());
 
