@@ -75,7 +75,7 @@ let renderProductsTOHTml= (products) => {
                 
                 if(product){
                    product.totalPrice = Number(product.totalPrice) + Number(element.Price);
-                   product.counter +=1;
+                   product.counter =Number(product.counter) + 1;
                    productInfo.counter = product.counter;
                    objProductsDataLocalStorage.push(product);
                    localStorage.setItem('ecommerce',JSON.stringify(objProductsDataLocalStorage));
